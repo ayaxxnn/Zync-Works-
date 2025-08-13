@@ -2,6 +2,7 @@
 from flask import Flask, request
 from telegram import Update, Bot
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, CallbackContext
+import imghdr
 import threading
 import logging
 from database import db_init, add_user, is_user_banned, redeem_key, generate_key, is_key_valid, use_premium_key, notify_admin_premium
